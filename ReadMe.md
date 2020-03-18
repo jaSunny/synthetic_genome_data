@@ -17,9 +17,6 @@ An examplary usage can be to evaluate new anonymization techniques which rely on
     - Example Values
     - Sources
 - Related Links & Other Datasets
-- Distributions
-  - Structural Overview
-  - Attribute Value Distributions
 
 ## Composition
 The following chapter shall briefly list and describe the include attributes for a single data record, including its source, type and distribution. All attributes shall be presented with examples.
@@ -218,23 +215,3 @@ Aggregated & statistics:
 * https://hcup-us.ahrq.gov/databases.jsp
 
 
-## Distributions
-
-### Structural Overview
-
-![alt tag](docs/distribution_overview.png?raw=true)
-
-Image Source: http://people.stern.nyu.edu/adamodar/pdfiles/papers/probabilistic.pdf
-
-### Attribute Value Distributions
-
-![alt tag](docs/barplot_BloodType_distribution.png?raw=true)
-![alt tag](docs/barplot_Centimeters_distribution.png)
-![alt tag](docs/barplot_Color_distribution.png?raw=true)
-![alt tag](docs/vioplot_Age_distribution.png?raw=true)
-![alt tag](docs/Density_Rug_Birthday_distribution.png?raw=true)
-![alt tag](docs/Density_Rug_disease_date_0_distribution.png?raw=true)
-![alt tag](docs/Density_Rug_drug_0_distribution.png?raw=true)
-![alt tag](docs/Density_Rug_drug_date_0_distribution.png?raw=true)
-
-more statistics can be found in ```docs/```
