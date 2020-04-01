@@ -1,5 +1,5 @@
 
-# Synthetic-Genome-Data
+# (Semi-) Synthetic Genome-Data Bundle
 
 > This repo holds an enriched genome data composed of multiple dataset publications enriched with profile data in close alignment with learned distributions.
 
