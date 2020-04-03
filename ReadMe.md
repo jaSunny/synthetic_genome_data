@@ -34,6 +34,7 @@ Disease relations:
 
 COVID-19 specific:
 * https://github.com/nytimes/covid-19-data
+* https://github.com/echen102/COVID-19-TweetIDs
 * https://github.com/CSSEGISandData/COVID-19
 * http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1
 * https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases
