@@ -9,59 +9,68 @@ An examplary usage can be to evaluate new anonymization techniques which rely on
 
 ## Table of Contents
 - Composition
-  - CRM Attributes
-    - CRM Attributes
-    - Example Values
-  - Behavioral/Medical Attributes
-    - CRM Attributes
-    - Example Values
-    - Sources
+  - Data sources & origins
+  - Attributes
+    - Behavioral/Medical Attributes
+    - User data
 - Related Links & Other Datasets
 
 ## Composition
 The following chapter shall briefly list and describe the include attributes for a single data record, including its source, type and distribution. All attributes shall be presented with examples.
 
-### CRM Attributes
+#### Data sources & origins
 
-The CRM attribute values originate from [fakenamegenerator.com](http://www.fakenamegenerator.com/), which provides
-* in sum 487 million different region-sensitive names (108 million male names, 379 million female names)
-* addresses and its geocoordinates (latitude & longitude) for 31 countries
-* local telephone numbers
-* national identification numbers
-* birthday and age
-* email addresses, usernames, passwords, websites and browser user agents
-* (fake but consistent) Visa numbers, expiring dates, CVV2s
-* employment details including company and Occupation
-* height and weight
+Genome data:
+* https://portal.gdc.cancer.gov/
+* http://www.1000genomes.org/data
+* http://www.completegenomics.com/public-data/69-genomes/
+* http://www.ebi.ac.uk/pdbe/emdb/index.html/
+* http://www.hagsc.org/hgdp/files.html
+* http://geneontology.org/docs/download-go-annotations/
+Disease relations:
+* http://disease-connect.org/
+* [Suthram S, Dudley JT, Chiang AP, Chen R, Hastie TJ, Butte AJ: Network-based elucidation of human disease similarities reveals common functional modules enriched for pluripotent drug targets. PLoS Comput Biol 2010, 6:1–10.](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000662)
+* http://www.disgenet.org/web/DisGeNET/menu/downloads#r
 
-Further details regarding the statistics, the reader is kindly referred to the [original source](http://www.fakenamegenerator.com/statistics.php).
+COVID-19 specific:
+* https://github.com/nytimes/covid-19-data
+* https://github.com/CSSEGISandData/COVID-19
+* http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1
+* https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases
+* https://www.epicentro.iss.it/coronavirus/sars-cov-2-sorveglianza-dati
+* https://www.epicentro.iss.it/coronavirus/sars-cov-2-decessi-italia
+* https://www.docnow.io/catalog/
 
-#### Example Values
+Blood type distribution per country:
+* https://en.wikipedia.org/wiki/Blood_type_distribution_by_country
 
-| Attribute        | Type           | Example value |
-| ------------- |:-------------:| -----:|
-| Firstname | String | Shirley |
-| Middlename | String | Time |
-| Lastname | String | Coffey |
-| Address | String | Sömmeringstr. 93 |
-| ZIP | Integer | 75172  |
-| City | String | Pforzheim Weststadt |
-| GeoCoordinates | String | 48.884783, 8.690593 |
-| Phone | String | 07231 69 44 49 |
-| County Code | Integer | 49 |
-| Birthday | Date | August 2, 1941 |
-| Age | Integer | 75 |
-| Email Address | String | SebastianGottlieb@dayrep.com  |
-| Username | String | Topas1941  |
-| Password | String | vaiFaoz4  |
-| Browser user agent | String | Mozilla/5.0 (Windows NT 10.0; Win64; x64)   |
-| Visa Nr. | String | 4929 0844 9315 7600  |
-| Expiring Date | Date | 5/2019 |
-| CVV2 | Integer | 666 |
-| Company | Integer | Schaak Electronics |
-| Occupation | Integer | Financial examiner |
-| Height (in cm)| Integer | 173  |
-| Weight (in kg) | Float | 68.2  |
+Diseases:
+* [Rzhetsky, A., Wajngurt, D., Park, N., & Zheng, T. (2007). Probing genetic overlap among complex human phenotypes. Proceedings of the National Academy of Sciences of the United States of America, 104, 11694–11699. doi:10.1073/pnas.0704820104](http://www.pnas.org/content/104/28/11694.full.pdf)
+* [Supplementary data from the disease network](https://www.nature.com/articles/ncomms5212)
+
+Drugs:
+* [US Food & Drug Administration](https://www.fda.gov/drugs/informationondrugs/ucm142438.htm)
+* https://www.medicare.gov/download/downloaddb.asp
+Genes:
+* https://github.com/macarthur-lab/gene_lists
+* http://www.disgenet.org/web/DisGeNET/menu/downloads#r
+* http://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/pharmacare/health-industry-professionals/downloadable-drug-data-files
+
+A Bundle of disease, SNP and genomic data:
+* https://github.com/mdozmorov/gwas2bed
+
+ICD-9-CM Diagnosis and Procedure Codes:
+* https://www.cms.gov/Medicare/Coding/ICD9ProviderDiagnosticCodes/codes.html
+
+Healthcare:
+* https://www.who.int/data/gho
+
+Other Healthcare specific:
+* https://www.cancerimagingarchive.net/
+* https://data.medicare.gov/
+* go.cms.gov/19xxPN4
+* https://github.com/awesomedata/awesome-public-datasets
+
 
 ### Behavioral/Medical Attributes
 The behavior attribute values include, but may not be limited to
@@ -161,42 +170,48 @@ For SNPs:
 | ALT | String | A  |
 
 
-#### Sources
+### Attributes
 
-Genome data:
-* http://www.1000genomes.org/data
-* http://www.completegenomics.com/public-data/69-genomes/
-* http://www.ebi.ac.uk/pdbe/emdb/index.html/
-* http://www.hagsc.org/hgdp/files.html
-* http://geneontology.org/docs/download-go-annotations/
-Disease relations:
-* http://disease-connect.org/
-* [Suthram S, Dudley JT, Chiang AP, Chen R, Hastie TJ, Butte AJ: Network-based elucidation of human disease similarities reveals common functional modules enriched for pluripotent drug targets. PLoS Comput Biol 2010, 6:1–10.](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000662)
-* http://www.disgenet.org/web/DisGeNET/menu/downloads#r
+The CRM attribute values originate from [fakenamegenerator.com](http://www.fakenamegenerator.com/), which provides
+* in sum 487 million different region-sensitive names (108 million male names, 379 million female names)
+* addresses and its geocoordinates (latitude & longitude) for 31 countries
+* local telephone numbers
+* national identification numbers
+* birthday and age
+* email addresses, usernames, passwords, websites and browser user agents
+* (fake but consistent) Visa numbers, expiring dates, CVV2s
+* employment details including company and Occupation
+* height and weight
 
-Blood type distribution per country:
-* https://en.wikipedia.org/wiki/Blood_type_distribution_by_country
+Further details regarding the statistics, the reader is kindly referred to the [original source](http://www.fakenamegenerator.com/statistics.php).
 
-Diseases:
-* [Rzhetsky, A., Wajngurt, D., Park, N., & Zheng, T. (2007). Probing genetic overlap among complex human phenotypes. Proceedings of the National Academy of Sciences of the United States of America, 104, 11694–11699. doi:10.1073/pnas.0704820104](http://www.pnas.org/content/104/28/11694.full.pdf)
-* [Supplementary data from the disease network](https://www.nature.com/articles/ncomms5212)
+#### Example Values
 
-Drugs:
-* [US Food & Drug Administration](https://www.fda.gov/drugs/informationondrugs/ucm142438.htm)
-* https://www.medicare.gov/download/downloaddb.asp
-Genes:
-* https://github.com/macarthur-lab/gene_lists
-* http://www.disgenet.org/web/DisGeNET/menu/downloads#r
-* http://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/pharmacare/health-industry-professionals/downloadable-drug-data-files
+| Attribute        | Type           | Example value |
+| ------------- |:-------------:| -----:|
+| Firstname | String | Shirley |
+| Middlename | String | Time |
+| Lastname | String | Coffey |
+| Address | String | Sömmeringstr. 93 |
+| ZIP | Integer | 75172  |
+| City | String | Pforzheim Weststadt |
+| GeoCoordinates | String | 48.884783, 8.690593 |
+| Phone | String | 07231 69 44 49 |
+| County Code | Integer | 49 |
+| Birthday | Date | August 2, 1941 |
+| Age | Integer | 75 |
+| Email Address | String | SebastianGottlieb@dayrep.com  |
+| Username | String | Topas1941  |
+| Password | String | vaiFaoz4  |
+| Browser user agent | String | Mozilla/5.0 (Windows NT 10.0; Win64; x64)   |
+| Visa Nr. | String | 4929 0844 9315 7600  |
+| Expiring Date | Date | 5/2019 |
+| CVV2 | Integer | 666 |
+| Company | Integer | Schaak Electronics |
+| Occupation | Integer | Financial examiner |
+| Height (in cm)| Integer | 173  |
+| Weight (in kg) | Float | 68.2  |
 
-A Bundle of disease, SNP and genomic data:
-* https://github.com/mdozmorov/gwas2bed
-
-ICD-9-CM Diagnosis and Procedure Codes:
-* https://www.cms.gov/Medicare/Coding/ICD9ProviderDiagnosticCodes/codes.html
-
-Other:
-* https://github.com/awesomedata/awesome-public-datasets
 
 ## Composed Data set
 
